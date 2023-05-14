@@ -346,6 +346,7 @@ ul {
 /* for whom */
 
 .for-whom {
+    position: relative;
     padding-bottom: 150px;
 }
 
@@ -412,4 +413,26 @@ ul {
 }
 .for-whom .main-list p:nth-child(3) span {
     color: #FFE819;
+}
+
+.for-whom .decor-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 514px;
+    z-index: -1;
+}
+
+@media (min-width: 1920px) {
+    .for-whom .decor-right {
+        z-index: 1;
+    }
+}
+
+.for-whom .decor-left {
+    position: absolute;
+    width: 760px;
+    bottom: 30px;
+    left: 0;
+    z-index: -1;
 }
