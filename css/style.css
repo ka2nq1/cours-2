@@ -1,0 +1,415 @@
+:root {
+    --title-font: 'Bebas Neue';
+    --content-font: 'Manrope';
+    --main-text-color: #FFFFFF;
+    --second-text-color: #141414;
+    --third-text-color: #4F4F4F;
+    --fourth-text-color: #6D6D6D;
+    --accent-text-color: #398EAE;
+    --main-bg: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #1D242C 0%, #1B1D20 100%);
+    --dark-bg: radial-gradient(75.03% 79.42% at 29.24% 20.58%, #1D242C 0%, #1B1D20 100%);
+    --accent-bg: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--content-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--main-text-color);
+}
+
+body {
+    background-color: #101010;
+    padding-bottom: 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration-line: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 450px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .desc {
+        display: none!important;
+    }
+}
+
+.section-title {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 45px;
+        line-height: 54px;
+    }
+}
+ 
+.main-button {
+    background: linear-gradient(99.14deg, #FFE819 22.17%, #F8EFA4 129.49%);
+    box-shadow: 0px 3px 0px #B6A82A, 0px 22px 35px -23px rgba(255, 232, 26, 0.5), inset 0px -11.0911px 7.17656px -11.0911px rgba(255, 255, 255, 0.6), inset 7.17656px 11.0911px 28.0538px -11.0911px rgba(255, 255, 255, 0.71);
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 38px 43px;
+    color: #67572E;
+    font-family: var(--content-font);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 18px;
+    cursor: pointer;
+    letter-spacing: 0.15em;
+}
+
+@media (max-width: 600px) {
+    .main-button {
+        font-size: 14px;
+        line-height: 15px;
+        padding: 33px 0;
+        letter-spacing: 0.12em;
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.x-center {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.double-block {
+    position: relative;
+}
+
+.front-block {
+    background: var(--main-bg);
+    border-radius: 20px;
+    box-shadow: 0px -14px 42px rgba(0, 0, 0, 0.82);
+}
+
+.back-block {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 35px);
+    z-index: -1;
+    height: 20px;
+    background: var(--dark-bg);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .back-block {
+        bottom: -8px;
+        width: calc(100% - 30px);
+        height: 16px;
+    }
+}
+
+/* header */
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 135px;
+}
+
+.header .top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .top-panel ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    min-width: 570px;
+    gap: 50px;
+}
+
+.hero {
+    padding-top: 167px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 114px;
+    max-width: 537px;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.hero .description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}
+
+.hero .opportunity {
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    gap: 18px;
+}
+
+.hero .opportunity p {
+    width: 392px;
+}
+
+.hero .opportunity img {
+    display: inline-block;
+    margin-top: -45px;
+    width: 36px;
+}
+
+.hero .opportunity .bold {
+    font-weight: 600;
+}
+
+.hero .teacher p:nth-child(1) {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+.hero .teacher p:nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.hero .double-block {
+    max-width: 853px;
+}
+
+.hero .program {
+    padding: 33px 45px 33px 23px;
+}
+
+.hero .program ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero .program li {
+    display: flex;
+    align-items: center;
+}
+
+.hero .program li p:nth-child(1) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.hero .program li p:nth-child(2) {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.hero .main-button {
+    margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding-top: 23px;
+        padding-bottom: 70px;
+    }
+    .header .top-panel {
+        position: relative;
+        background: linear-gradient(87.79deg, rgba(74, 74, 74, 0.3) 5.84%, rgba(95, 95, 95, 0.3) 98.67%);
+        border: 1px solid #252525;
+        backdrop-filter: blur(4px);
+        justify-content: center;
+        width: 100vw;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-top: -23px;
+        padding: 23px 0;
+    }
+
+    .header .top-panel img {
+        width: 155px;
+    }
+
+    .hero {
+        padding-top: 453px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .hero .opportunity p {
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero .program {
+        display: flex;
+        justify-content: center;
+        padding: 28px;
+    }
+
+    .hero .program ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero .program li {
+        gap: 15px;
+    }
+
+    .hero .program li img {
+        width: 66px;
+    }
+
+    .hero .program li p:nth-child(1) {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    .hero .program li p:nth-child(2) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .hero .main-button {
+        margin-top: 38px;
+    }
+}
+
+/* for whom */
+
+.for-whom {
+    padding-bottom: 150px;
+}
+
+.for-whom .section-title {
+    margin-bottom: 30px;
+}
+
+.for-whom .list-title {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.for-whom .tags-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 134px;
+}
+
+.for-whom .tags-list li {
+    padding: 8px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #4D4D4D;
+    border-radius: 70px;
+}
+
+.for-whom .main-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.for-whom .main-list li {
+    padding: 0 30px 30px 30px;
+    width: 270px;
+    height: 389px;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #1D242C 0%, #1B1D20 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 12px 154px -46px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.for-whom .main-list img {
+    width: 217px;
+    margin-bottom: 31px;
+    margin-top: -70px;
+}
+
+.for-whom .main-list p:nth-child(2) {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 23px;
+}
+.for-whom .main-list p:nth-child(3) {
+    font-size: 17px;
+    line-height: 25px;
+}
+.for-whom .main-list p:nth-child(3) span {
+    color: #FFE819;
+}
