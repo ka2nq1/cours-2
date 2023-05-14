@@ -765,6 +765,7 @@ ul {
     .way .problems-list p {
         font-size: 15px;
         line-height: 23px;
+        padding: 0 30px;
     }
 }
 
