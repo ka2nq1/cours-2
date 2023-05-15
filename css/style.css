@@ -802,6 +802,7 @@ ul {
 @media (max-width: 600px) {
     .how-to-study {
         padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .how-to-study .how-to-title {
@@ -851,5 +852,180 @@ ul {
         position: absolute;
         top: -9px;
         left: 25px;
+    }
+}
+
+/* course program */
+
+.modules {
+    padding-bottom: 140px;
+}
+
+.modules .title {
+    margin-bottom: 75px;
+}
+
+.modules .title {
+    margin-bottom: 38px;
+}
+
+.modules .list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modules .list > li {
+    position: relative;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #242E38 0%, #1B1D20 100%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modules .moduleWrap {
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #1D242C 0%, #1B1D20 100%);
+    box-shadow: 0px -14px 42px rgba(0, 0, 0, 0.5);
+    padding: 55px 70px;
+    width: calc(100% + 2px);
+    transform: translate(-1px, 0px);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modules .moduleWrap > div {
+    min-width: 170px;
+}
+
+.modules .list .active .moduleWrap,
+.modules .moduleWrap:hover, 
+.modules .moduleWrap:focus {
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%);
+}
+
+.modules .moduleWrap .second-title {
+    text-align: left;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 64px;
+    margin-bottom: -10px;
+    padding-right: 50px;
+}
+
+.modules .moduleWrap .btn {
+    font-size: 17px;
+    line-height: 23px;
+    color: #BABABA;
+    margin-right: 31px;
+}
+
+.modules .moduleWrap .arrow {
+    margin-bottom: -5px;
+    transform: rotate(0deg);
+    transition: linear 0.2s;
+}
+
+.modules .active .moduleWrap .arrow {
+    transform: rotate(180deg);
+}
+
+.modules .programDropdown {
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.5s;
+}
+
+.modules .programDropdown .second-title {
+    margin-top: 35px;
+    padding: 0 35px;
+    text-align: left;
+}
+
+.modules .list > .active .programDropdown {
+    max-height: 1000px;
+}
+
+.modules ol {
+    padding: 50px 85px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modules .bonus {
+    font-size: 20px;
+    line-height: 36px;
+    margin: -20px 0 -35px 70px;
+}
+
+.modules .blue-bonus {
+    color: #49A6BD;
+}
+
+.modules .bonus-title-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.modules .bonus-title-wrap p {
+    max-width: 610px;
+}
+
+.modules .present p {
+    max-width: 710px;
+}
+
+.modules .present img {
+    height: 97px;
+}
+
+@media (max-width: 600px) {
+
+    .modules {
+        padding-bottom: 70px;
+    }
+
+    .modules .moduleWrap {
+        padding: 30px 30px 30px 47px;
+        align-items: flex-start;
+    }
+    .modules .moduleWrap .second-title {
+        font-size: 28px;
+        line-height: 30px;
+        padding: 0;
+    }
+    .modules .moduleWrap > div {
+        min-width: auto;
+    }
+
+    .modules .moduleWrap .arrow {
+        width: 20px;
+    }
+
+    .modules ol {
+        padding: 30px 60px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .modules .bonus {
+        font-size: 18px;
+        margin: -10px 0 -24px 45px;
+    }
+
+    .modules .bonus-title-wrap > img {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        width: 30px;
+        height: 30px;
     }
 }
