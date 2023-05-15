@@ -182,8 +182,16 @@ ul {
 .header {
     padding-top: 50px;
     padding-bottom: 135px;
-    /* background-image: url(../images/hero-bg-desk.png); */
+    /* background-image: url(../images/header-person.png); */
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header .container {
+    background-image: url(../images/header-person.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 286px -104px;
 }
 
 .header .top-panel {
@@ -296,6 +304,13 @@ ul {
     .header {
         padding-top: 23px;
         padding-bottom: 70px;
+    }
+
+    .header .container {
+        background-image: url(../images/header-person.png);
+        background-repeat: no-repeat;
+        background-size: 766px;
+        background-position: center 25px;
     }
 
     .header .top-panel {
