@@ -23,3 +23,4 @@ for (let i = 0; i < questionsItem.length; i++) {
         this.classList.toggle("active");
     });
 }
+

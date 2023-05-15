@@ -59,13 +59,13 @@ ul {
 
 @media (max-width: 600px) {
     .desc {
-        display: none!important;
+        display: none !important;
     }
 }
 
 @media (min-width: 601px) {
     .mob {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -84,7 +84,7 @@ ul {
         line-height: 54px;
     }
 }
- 
+
 .main-button {
     background: linear-gradient(99.14deg, #FFE819 22.17%, #F8EFA4 129.49%);
     box-shadow: 0px 3px 0px #B6A82A, 0px 22px 35px -23px rgba(255, 232, 26, 0.5), inset 0px -11.0911px 7.17656px -11.0911px rgba(255, 255, 255, 0.6), inset 7.17656px 11.0911px 28.0538px -11.0911px rgba(255, 255, 255, 0.71);
@@ -267,6 +267,7 @@ ul {
     line-height: 28px;
     margin-bottom: 10px;
 }
+
 .hero .program li p:nth-child(2) {
     font-weight: 400;
     font-size: 17px;
@@ -282,6 +283,7 @@ ul {
         padding-top: 23px;
         padding-bottom: 70px;
     }
+
     .header .top-panel {
         position: relative;
         background: linear-gradient(87.79deg, rgba(74, 74, 74, 0.3) 5.84%, rgba(95, 95, 95, 0.3) 98.67%);
@@ -354,6 +356,7 @@ ul {
         line-height: 22px;
         margin-bottom: 5px;
     }
+
     .hero .program li p:nth-child(2) {
         font-size: 12px;
         line-height: 16px;
@@ -410,7 +413,9 @@ ul {
     padding: 0 30px 30px 30px;
     width: 270px;
     height: 389px;
-    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #1D242C 0%, #1B1D20 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #1D242C 0%, #1B1D20 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
     box-shadow: 0px 12px 154px -46px rgba(0, 0, 0, 0.45);
     border-radius: 20px;
     margin-top: 70px;
@@ -427,10 +432,12 @@ ul {
     line-height: 32px;
     margin-bottom: 23px;
 }
+
 .for-whom .main-list p:nth-child(3) {
     font-size: 17px;
     line-height: 25px;
 }
+
 .for-whom .main-list p:nth-child(3) span {
     color: #FFE819;
 }
@@ -501,6 +508,7 @@ ul {
         width: 100%;
         max-width: 255px;
     }
+
     .for-whom .main-list p:nth-child(3) {
         font-size: 15px;
         line-height: 23px;
@@ -512,6 +520,7 @@ ul {
         width: 262px;
         right: -62px;
     }
+
     .for-whom .decor-left {
         top: 140px;
         width: 286px;
@@ -563,10 +572,12 @@ ul {
     position: relative;
     z-index: 1;
 }
+
 .way .ach-list span {
     font-size: 69px;
     line-height: 83px;
 }
+
 .way .ach-list p:nth-child(2) {
     font-size: 17px;
     line-height: 25px;
@@ -611,6 +622,7 @@ ul {
     line-height: 32px;
     margin-bottom: 23px;
 }
+
 .way .results-list p:nth-child(3) {
     font-size: 17px;
     line-height: 25px;
@@ -655,7 +667,7 @@ ul {
 }
 
 .way .problems-list li {
-    width: 370px;  
+    width: 370px;
 }
 
 .way .problems-list img {
@@ -698,6 +710,7 @@ ul {
         font-size: 64px;
         line-height: 77px;
     }
+
     .way .ach-list span {
         font-size: 30px;
         line-height: 36px;
@@ -721,6 +734,7 @@ ul {
         line-height: 23px;
         margin-bottom: 23px;
     }
+
     .way .results-list p:nth-child(3) {
         font-size: 15px;
         line-height: 23px;
@@ -730,7 +744,7 @@ ul {
         width: 100%;
         max-width: 319px;
     }
-    
+
     .way .results-list .result-item {
         height: auto;
     }
@@ -879,7 +893,7 @@ ul {
     gap: 30px;
 }
 
-.modules .list > li {
+.modules .list>li {
     position: relative;
     background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #242E38 0%, #1B1D20 100%);
     border-radius: 20px;
@@ -899,12 +913,12 @@ ul {
     align-items: center;
 }
 
-.modules .moduleWrap > div {
+.modules .moduleWrap>div {
     min-width: 170px;
 }
 
 .modules .list .active .moduleWrap,
-.modules .moduleWrap:hover, 
+.modules .moduleWrap:hover,
 .modules .moduleWrap:focus {
     background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%);
 }
@@ -950,7 +964,7 @@ ul {
     text-align: left;
 }
 
-.modules .list > .active .programDropdown {
+.modules .list>.active .programDropdown {
     max-height: 1000px;
 }
 
@@ -1001,12 +1015,14 @@ ul {
         padding: 30px 30px 30px 47px;
         align-items: flex-start;
     }
+
     .modules .moduleWrap .second-title {
         font-size: 28px;
         line-height: 30px;
         padding: 0;
     }
-    .modules .moduleWrap > div {
+
+    .modules .moduleWrap>div {
         min-width: auto;
     }
 
@@ -1025,7 +1041,7 @@ ul {
         margin: -10px 0 -24px 45px;
     }
 
-    .modules .bonus-title-wrap > img {
+    .modules .bonus-title-wrap>img {
         position: absolute;
         bottom: 24px;
         right: 24px;
@@ -1101,12 +1117,15 @@ ul {
 .format .format-item:nth-child(2) .title-block {
     background: linear-gradient(50.32deg, #EFEFEF 1.29%, #FFFFFF 94.1%);
 }
+
 .format .format-item:nth-child(3) .title-block {
     background: radial-gradient(51.28% 46.92% at 31.55% 10.66%, #7C4EC6 0%, #4C2F8B 100%);
 }
+
 .format .format-item:nth-child(2) .list-block {
     background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #FFFFFF 0%, #DCDCDC 100%);
 }
+
 .format .format-item:nth-child(3) .list-block {
     background: radial-gradient(51.28% 46.92% at 31.55% 10.66%, #7C4EC6 0%, #4C2F8B 100%);
 }
@@ -1114,6 +1133,7 @@ ul {
 .format .format-item:nth-child(2) .title-block p {
     border: 1px solid #C8C8C8;
 }
+
 .format .format-item:nth-child(3) .title-block p {
     border: 1px solid #FFFFFF;
 }
@@ -1126,7 +1146,7 @@ ul {
 .format .list-block ul li::before {
     content: "\2022";
     color: #FFE81A;
-    font-weight: bold; 
+    font-weight: bold;
     display: inline-block;
     font-size: 20px;
     position: absolute;
@@ -1140,6 +1160,7 @@ ul {
 .format .format-item:nth-child(2) .list-block ul li::before {
     color: #141414;
 }
+
 .format .format-item:nth-child(3) .list-block ul li::before {
     color: #FFFFFF;
 }
@@ -1157,8 +1178,9 @@ ul {
     margin-bottom: 110px;
 }
 
-.format .disable, .format .disable:before {
-    color: #808080!important;
+.format .disable,
+.format .disable:before {
+    color: #808080 !important;
 }
 
 .format .separator {
@@ -1188,6 +1210,7 @@ ul {
     line-height: 44px;
     color: #4F4F4F;
 }
+
 .format .price-wrap .old p:nth-child(1):before {
     content: '';
     position: absolute;
@@ -1197,6 +1220,7 @@ ul {
     border: 1px solid #4F4F4F;
     transform: rotate(-21.43deg);
 }
+
 .format .price-wrap .old p:nth-child(2) {
     font-size: 12px;
     line-height: 15px;
@@ -1206,9 +1230,11 @@ ul {
 .format .format-item:nth-child(3) .price-wrap .old p:nth-child(1) {
     color: #B1B1B1;
 }
+
 .format .format-item:nth-child(3) .price-wrap .old p:nth-child(1):before {
     border: 1px solid #B1B1B1;
 }
+
 .format .format-item:nth-child(3) .price-wrap .old p:nth-child(2) {
     color: #B1B1B1;
 }
@@ -1230,6 +1256,7 @@ ul {
     box-shadow: 0px 3.91449px 0px #496F79, 0px 22px 30px -23px rgba(175, 238, 255, 0.67), inset 0px -11.0911px 7.17656px -11.0911px rgba(255, 255, 255, 0.6), inset 7.17656px 11.0911px 28.0538px -11.0911px rgba(255, 255, 255, 0.71);
     color: #ffff;
 }
+
 .format a:nth-child(3) .list-btn {
     border: 2px solid #1A3C48;
     background: transparent;
@@ -1242,16 +1269,18 @@ ul {
     color: #141414;
     border: 2px solid #1A3C48;
 }
+
 .format .format-item:nth-child(3) a:nth-child(3) .list-btn {
     color: #FFFFFF;
     border: 2px solid #ffff;
 }
 
 .format .gold {
-    color: #FFE81A!important;
+    color: #FFE81A !important;
 }
+
 .format .gold:before {
-    content: ''!important;
+    content: '' !important;
     background-image: url(../icons/star.svg);
     width: 17px;
     height: 17px;
@@ -1265,7 +1294,9 @@ ul {
 
 .premium .front-block {
     position: relative;
-    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
     /* border: 1px solid #40879D; */
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     padding: 78px 78px 93px 78px;
@@ -1280,7 +1311,9 @@ ul {
 }
 
 .premium .back-block {
-    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #226176 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #226176 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
     border: 1px solid #40879D;
 }
 
@@ -1485,6 +1518,7 @@ ul {
         top: inherit;
         width: 110%;
     }
+
     .format .discount {
         padding-bottom: 530px;
     }
@@ -1561,6 +1595,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 150px;
 }
 
 .students .list li {
@@ -1666,7 +1701,43 @@ ul {
     justify-content: center;
 }
 
+.students .slider-title {
+    margin-bottom: 50px;
+}
+
+.itc-slider__item {
+    padding: 0 100px;
+}
+
+.itc-slider__item img {
+    width: 100%;
+}
+
+.itc-slider__btn {
+    background: radial-gradient(73.55% 73.78% at 35.67% 50%, #171B20 0%, #1F2326 100%)!important;
+    border-radius: 50%;
+    width: 69px!important;
+    height: 69px!important;
+}
+
+.itc-slider__btn_prev::before, .itc-slider__btn_next::before {
+    background-image: url(../icons/slider-btn.svg)!important;
+}
+
+.itc-slider__btn_next {
+    transform: translateY(-50%) rotate(180deg)!important;
+}
+
 @media (max-width: 600px) {
+
+    .students .slider-title {
+        margin-bottom: 20px;
+    }
+
+    .itc-slider__item {
+        padding: 0 35px;
+    }
+
     .students {
         padding-bottom: 70px;
     }
@@ -1683,6 +1754,10 @@ ul {
 
     .students .title-wrap img {
         max-width: 320px;
+    }
+
+    .students .list {
+        margin-bottom: 70px;
     }
 
     .students .list li {
@@ -1728,7 +1803,8 @@ ul {
         margin-bottom: 8px;
     }
 
-    .students .list .point-a p:nth-child(2), .students .list .point-b p:nth-child(2) {
+    .students .list .point-a p:nth-child(2),
+    .students .list .point-b p:nth-child(2) {
         width: 109px;
         height: 37px;
         font-size: 10px;
