@@ -356,6 +356,13 @@ ul {
         transform: translateX(-50%);
     }
 
+    .hero-video {
+        top: 153px;
+        right: 178px;
+        width: 212px;
+        height: 212px;
+    }
+
     .hero .opportunity {
         max-width: 283px;
         position: relative;
