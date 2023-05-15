@@ -211,6 +211,15 @@ ul {
 
 .hero {
     padding-top: 167px;
+    position: relative;
+}
+
+.hero-video {
+    position: absolute;
+    top: 201px;
+    right: 203px;
+    width: 350px;
+    height: 350px;
 }
 
 .hero h1 {
