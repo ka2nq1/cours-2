@@ -59,6 +59,12 @@ ul {
     }
 }
 
+@media (min-width: 601px) {
+    .mob {
+        display: none!important;
+    }
+}
+
 .section-title {
     font-family: var(--title-font);
     font-weight: 400;
@@ -757,6 +763,10 @@ ul {
         gap: 35px;
     }
 
+    .way .problems-list li {
+        width: 100%;
+    }
+
     .way .problems-list img {
         width: 100%;
         margin-bottom: 28px;
@@ -772,5 +782,74 @@ ul {
 @media (min-width: 430px) and (max-width: 600px) {
     .way .ach-list li {
         max-width: calc(50% - 10px);
+    }
+}
+
+/* how to study */
+
+.how-to-study {
+    padding-top: 155px;
+}
+
+.how-to-study .how-to-title {
+    margin-bottom: 84px;
+}
+
+.how-to-study .desc-img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .how-to-study {
+        padding-top: 70px;
+    }
+
+    .how-to-study .how-to-title {
+        margin-bottom: 45px;
+        max-width: 321px;
+    }
+
+    .how-to-study .list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .how-to-study .list li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+    }
+
+    .how-to-study .list .num {
+        position: relative;
+        display: inline-block;
+        font-family: 'Bebas Neue';
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 78px;
+        letter-spacing: -0.035em;
+        text-align: center;
+        background: #5FCFE0;
+        box-shadow: inset 0px 4px 39px #3B90A0;
+        border-radius: 50%;
+        min-width: 69px;
+        height: 69px;
+    }
+
+    .how-to-study .list p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .how-to-study .list .grey-text {
+        color: #898989;
+    }
+
+    .how-to-study .list img {
+        position: absolute;
+        top: -9px;
+        left: 25px;
     }
 }
