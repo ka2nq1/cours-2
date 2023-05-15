@@ -27,8 +27,18 @@ html {
 }
 
 body {
-    background-color: #101010;
+    background-color: #000000;
     padding-bottom: 50px;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(../images/bg-mob.png);
+    }
 }
 
 a {
@@ -172,6 +182,8 @@ ul {
 .header {
     padding-top: 50px;
     padding-bottom: 135px;
+    /* background-image: url(../images/hero-bg-desk.png); */
+    background-size: contain;
 }
 
 .header .top-panel {
@@ -538,6 +550,13 @@ ul {
 
 /* way */
 
+.way {
+    /* background-image: url(../images/mountaine-bg.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 12%;
+}
+
 .way .section-title {
     margin-bottom: 50px;
 }
@@ -809,6 +828,9 @@ ul {
 
 .how-to-study {
     padding-top: 155px;
+    /* background-image: url(../images/how-gous-bg.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .how-to-study .how-to-title {
@@ -1057,6 +1079,10 @@ ul {
 .format {
     padding-bottom: 236px;
     overflow: hidden;
+    /* background-image: url(../images/format-bg.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
 }
 
 .format .format-title {
@@ -1376,6 +1402,7 @@ ul {
 
 .format .discount {
     position: relative;
+    z-index: 1;
 }
 
 .format .discount .bg-img {
@@ -1578,6 +1605,10 @@ ul {
 
 .students {
     padding-bottom: 150px;
+    /* background-image: url(../images/students-bg.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 31%;
 }
 
 .students .title-wrap {
