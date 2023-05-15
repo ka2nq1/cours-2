@@ -46,13 +46,15 @@ ul {
 
 .container {
     max-width: 1250px;
+    min-width: 1250px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
 @media (max-width: 600px) {
     .container {
-        max-width: 450px;
+        max-width: 500px;
+        min-width: 330px;
         padding: 0 20px;
     }
 }
