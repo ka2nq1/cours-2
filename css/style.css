@@ -40,6 +40,10 @@ ul {
     list-style-type: none;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 .container {
     max-width: 1250px;
     margin: 0 auto;
@@ -1034,6 +1038,7 @@ ul {
 
 .format {
     padding-bottom: 236px;
+    overflow: hidden;
 }
 
 .format .format-title {
@@ -1254,6 +1259,141 @@ ul {
     background-repeat: no-repeat;
 }
 
+.premium {
+    margin-bottom: 175px;
+}
+
+.premium .front-block {
+    position: relative;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #2F748B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* border: 1px solid #40879D; */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 78px 78px 93px 78px;
+    overflow: hidden;
+}
+
+.premium .bg-img {
+    position: absolute;
+    right: -21px;
+    top: -3px;
+    width: 1170px;
+}
+
+.premium .back-block {
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #4EAFC6 0%, #226176 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border: 1px solid #40879D;
+}
+
+.premium h4 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 106%;
+    max-width: 521px;
+    margin-bottom: 29px;
+}
+
+.premium .chess {
+    position: relative;
+    padding: 25px 21px 25px 96px;
+    background: radial-gradient(79.42% 79.42% at 28.02% 20.58%, #232323 0%, #000000 100%);
+    border-radius: 10px;
+    width: 448px;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+.premium .chess span {
+    font-weight: 600;
+}
+
+.premium .chess img {
+    position: absolute;
+    width: 266px;
+    left: -106px;
+    top: -114px;
+}
+
+.premium .one {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.premium .one:before {
+    content: '';
+    background-image: url(../icons/info.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 14px;
+    margin-bottom: -3px;
+}
+
+.premium button {
+    position: absolute;
+    bottom: 64px;
+    right: 103px;
+}
+
+.format .discount {
+    position: relative;
+}
+
+.format .discount .bg-img {
+    position: absolute;
+    right: -400px;
+    top: -200px;
+    z-index: -1;
+    width: 1500px;
+}
+
+.format .discount h4 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    position: relative;
+    max-width: 472px;
+    margin-bottom: 50px;
+}
+
+.format .discount h4 span:before {
+    position: absolute;
+    bottom: -3px;
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 16px;
+    background-image: url(../icons/yellowUnderlines.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.format .discount .cash {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.format .discount .cash img {
+    width: 107px;
+}
+
+.format .discount .cash p {
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 380px;
+}
+
+.format .discount button {
+    width: 372px;
+}
+
 @media (max-width: 600px) {
     .format {
         padding-bottom: 70px;
@@ -1271,6 +1411,7 @@ ul {
 
     .format .title-block {
         padding: 25px 48px;
+        max-width: 90%;
     }
 
     .format .title-block h4 {
@@ -1287,5 +1428,112 @@ ul {
     .format .price-wrap .current {
         font-size: 70px;
     }
-    
+
+    .premium {
+        margin-bottom: 70px;
+    }
+
+    .premium .front-block {
+        padding: 59px 15px 562px 15px;
+    }
+
+    .premium h4 {
+        font-size: 38px;
+        line-height: 106%;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    .premium .chess {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 23px;
+        padding: 18px 15px 25px 72px;
+        margin-bottom: 75px;
+    }
+
+    .premium .one {
+        position: relative;
+        font-size: 15px;
+        line-height: 23px;
+        text-align: center;
+        max-width: 217px;
+        margin: 0 auto;
+    }
+
+    .premium .one:before {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .premium button {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+        padding: 33px;
+        bottom: 36px;
+    }
+
+    .premium .bg-img {
+        position: absolute;
+        right: -22px;
+        bottom: -24px;
+        top: inherit;
+        width: 110%;
+    }
+    .format .discount {
+        padding-bottom: 530px;
+    }
+
+    .format .discount .bg-img {
+        width: 100vw;
+        top: inherit;
+        bottom: 115px;
+        left: -20px;
+    }
+
+    .format .discount h4 {
+        font-size: 45px;
+        line-height: 45px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 18px;
+        max-width: 266px;
+    }
+
+    .format .discount h4 span:before {
+        width: 122px;
+        bottom: -6px;
+    }
+
+    .format .discount .cash {
+        flex-direction: column;
+    }
+
+    .format .discount .cash img {
+        width: 140px;
+        margin-right: -27px;
+        margin-bottom: 30px;
+    }
+
+    .format .discount .cash p {
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .format .discount button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+        padding: 33px;
+        max-width: 295px;
+        width: 100%;
+    }
 }
