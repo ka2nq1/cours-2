@@ -1816,3 +1816,25 @@ ul {
         top: 13px;
     }
 }
+
+/* author */
+
+.author {
+    padding-bottom: 160px;
+}
+
+.author .desc {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+}
+
+.author .mob {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+}
+
+@media (max-width: 600px) {
+    .author {
+        padding-bottom: 50px;
+    }
+}
