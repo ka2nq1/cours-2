@@ -468,8 +468,9 @@ ul {
 }
 
 .for-whom .main-list img {
-    width: 217px;
+    width: 222px;
     margin: -70px 0 31px -8px;
+    margin-left: -10px;
 }
 
 .for-whom .main-list p:nth-child(2) {
@@ -496,7 +497,7 @@ ul {
     z-index: -1;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1960px) {
     .for-whom .decor-right {
         z-index: 1;
     }
@@ -545,7 +546,8 @@ ul {
     .for-whom .main-list img {
         margin-bottom: 15px;
         position: relative;
-        width: 255px;
+        width: 267px;   
+        margin-left: -25px;
     }
 
     .for-whom .main-list p:nth-child(2) {
@@ -1086,6 +1088,13 @@ ul {
         width: 20px;
     }
 
+    .modules .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
     .modules ol {
         padding: 30px 60px;
         font-size: 15px;
@@ -1251,6 +1260,7 @@ ul {
     display: flex;
     gap: 30px;
     margin-bottom: 41px;
+    padding-left: 20px;
 }
 
 .format .price-wrap .current {
@@ -1544,7 +1554,7 @@ ul {
         font-size: 17px;
         line-height: 23px;
         padding: 18px 15px 25px 72px;
-        margin-bottom: 75px;
+        margin-bottom: 51px;
     }
 
     .premium .one {
@@ -1619,6 +1629,7 @@ ul {
         font-size: 17px;
         line-height: 25px;
         text-align: center;
+        max-width: 290px;
     }
 
     .format .discount button {
@@ -1785,12 +1796,16 @@ ul {
     height: 69px!important;
 }
 
-.itc-slider__btn_prev::before, .itc-slider__btn_next::before {
+.itc-slider__btn_prev::before {
     background-image: url(../icons/slider-btn.svg)!important;
 }
 
 .itc-slider__btn_next {
-    transform: translateY(-50%) rotate(180deg)!important;
+    background: linear-gradient(91.95deg, #7EB4C2 -3.29%, #7ABFD1 38.96%, #64A6B8 108.63%), radial-gradient(73.55% 73.78% at 35.67% 50%, #171B20 0%, #1F2326 100%)!important;
+}
+
+.itc-slider__btn_next::before {
+    background-image: url(../icons/slider-btn-next.svg)!important;
 }
 
 @media (max-width: 600px) {
@@ -1888,6 +1903,19 @@ ul {
     padding-bottom: 160px;
 }
 
+.author .container {
+    position: relative;
+}
+
+.author-link {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+    bottom: 100px;
+}
+
 .author .desc {
     margin: 0 -20px;
     width: calc(100% + 40px);
@@ -1901,6 +1929,17 @@ ul {
 @media (max-width: 600px) {
     .author {
         padding-bottom: 50px;
+    }
+
+    .author-link {
+        width: 300px;
+        height: 150px;
+        display: inline-block;
+        position: absolute;
+        right: inherit;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
     }
 }
 
