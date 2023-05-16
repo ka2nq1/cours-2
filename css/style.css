@@ -38,6 +38,7 @@ body {
 @media (max-width: 600px) {
     body {
         background-image: url(../images/bg-mob.png);
+        background-size: contain;
     }
 }
 
@@ -2018,7 +2019,7 @@ ul {
 /* footer */
 
 .footer {
-    padding: 0 60px;
+    padding: 0 35px;
 }
 
 .footer .logoWrap {
