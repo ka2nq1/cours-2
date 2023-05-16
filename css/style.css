@@ -1199,6 +1199,16 @@ ul {
     background: radial-gradient(51.28% 46.92% at 31.55% 10.66%, #7C4EC6 0%, #4C2F8B 100%);
 }
 
+.format .format-item:nth-child(3) {
+    position: relative;
+}
+.format .format-item:nth-child(3) .overlay {
+    position: absolute;
+    right: -58px;
+    bottom: -580px;
+    width: 125%;
+}
+
 .format .format-item:nth-child(2) .title-block p {
     border: 1px solid #C8C8C8;
 }
