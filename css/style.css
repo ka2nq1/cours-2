@@ -2017,6 +2017,10 @@ ul {
 
 /* footer */
 
+.footer {
+    padding: 0 60px;
+}
+
 .footer .logoWrap {
     margin-bottom: 30px;
 }
