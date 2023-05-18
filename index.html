@@ -146,7 +146,7 @@
                        </li> 
                        <li>
                            <p>55 <span>рокiв</span></p>
-                           <p>найстаршому учню</p>
+                           <p>найстаршому учню <span>asd asd sad asd as</span></p>
                            <img src="icons/way-icon.svg" alt="icon">
                        </li> 
                     </ul>
@@ -777,10 +777,10 @@
                             <a href="https://forms.gle/Q7uNBEswj8Cb2gpV8">
                                 <button class="list-btn main-button">оплатити повністю</button>
                             </a>
-                            <a href="">
+                            <a href="https://forms.gle/Q7uNBEswj8Cb2gpV8">
                                 <button class="list-btn main-button">залишити заявку</button>
                             </a>
-                            <a href="">
+                            <a href="https://forms.gle/Q7uNBEswj8Cb2gpV8">
                                 <button class="list-btn main-button">Забронювати за 1000 грн</button>
                             </a>
                         </div>
@@ -826,9 +826,7 @@
             </div>
             <ul class="list">
                 <li>
-                    <a href="https://www.youtube.com/watch?v=Nr5mVDJ5-oE&ab_channel=%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%A8%D1%82%D0%B0%D0%B1%D1%83%D1%80%D0%B0%D0%9E%D0%A2%D0%97%D0%AB%D0%92%D0%AB">
-                        <img class="video" src="images/yuri.png" alt="img">
-                    </a>
+                    <img class="video" src="images/yuri.png" alt="img" onclick="openOverlay('https://www.youtube.com/embed/Nr5mVDJ5-oE?autoplay=1')">
                     <p class="name">Юрiй</p>
                     <p class="course-type">Індивідуальний курс</p>
                     <p class="student-result">Результат</p>
@@ -846,9 +844,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="https://youtu.be/D1u28ZlBo3w">
-                        <img class="video" src="images/vasilii.png" alt="img">
-                    </a>
+                    <img class="video" src="images/vasilii.png" alt="img" onclick="openOverlay('https://www.youtube.com/embed/D1u28ZlBo3w?autoplay=1')">
                     <p class="name">Василь Слiнченко</p>
                     <p class="course-type">Індивідуальний курс</p>
                     <p class="student-result">Результат</p>
@@ -866,9 +862,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="https://youtu.be/ALGte9lx2CE">
-                        <img class="video" src="images/igorr.png" alt="img">
-                    </a>
+                    <img class="video" src="images/igorr.png" alt="img" onclick="openOverlay('https://www.youtube.com/embed/ALGte9lx2CE?autoplay=1')">
                     <p class="name">iгор</p>
                     <p class="course-type">Групове навчання</p>
                     <p class="student-result">Результат</p>
@@ -886,9 +880,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="https://youtu.be/HZquOZR1_0Q">
-                        <img class="video" src="images/dianaa.png" alt="img">
-                    </a>
+                    <img class="video" src="images/dianaa.png" alt="img" onclick="openOverlay('https://www.youtube.com/embed/HZquOZR1_0Q?autoplay=1')">
                     <p class="name">Дiана</p>
                     <p class="course-type">Індивідуальний курс</p>
                     <p class="student-result">Результат</p>
@@ -1017,5 +1009,10 @@
             </a>
         </div>
     </section>
+    <div id="overlay" onclick="closeOverlay()">
+        <div class="video-container">
+             <iframe id="video-iframe" src="" frameborder="0" allow='autoplay' scrolling="auto" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 </html>
